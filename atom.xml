@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-11T15:44:09.000Z</updated>
+  <updated>2017-03-22T16:46:48.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,57 +16,84 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>低头</title>
-    <link href="http://yoursite.com/2017/03/11/%E4%BD%8E%E5%A4%B4/"/>
-    <id>http://yoursite.com/2017/03/11/低头/</id>
-    <published>2017-03-11T15:44:09.000Z</published>
-    <updated>2017-03-11T15:44:09.000Z</updated>
+    <title>Effective C++ 阅读笔记</title>
+    <link href="http://yoursite.com/2017/03/01/Effective-C-1/"/>
+    <id>http://yoursite.com/2017/03/01/Effective-C-1/</id>
+    <published>2017-02-28T16:00:00.000Z</published>
+    <updated>2017-03-22T16:46:48.000Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>page</title>
-    <link href="http://yoursite.com/2017/03/11/page/"/>
-    <id>http://yoursite.com/2017/03/11/page/</id>
-    <published>2017-03-11T13:58:03.000Z</published>
-    <updated>2017-03-11T13:58:03.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/01/18/hello-world/"/>
-    <id>http://yoursite.com/2017/01/18/hello-world/</id>
-    <published>2017-01-18T15:39:57.000Z</published>
-    <updated>2017-01-18T15:39:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<hr>
+<p><em><font size="3" face="微软雅黑">  最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招故拾起来再看下，希望对自己寻找工作的过程和将来的职业生涯都有帮助；更重要的一点是接触的C++时间更长些，还是没有研究的很深入，所以再读一遍之前看过的书，复习一下，希望有更深的理解！<br></font></em></p>
+<hr>
+<p>##一.让自己习惯C++ </p>
+<p>###1.条款01：视C++为一个语言联邦<br>一开始，C++只是C上加一些面向对象的特征。故C++最初的名称 C with Classes,但是C++并非一种单一语言，C++ 中各种规则都倾向于简单、直观、容易，因此我们理解C++也有了下面4个最主要的特征：</p>
+<p><strong>(1) C </strong></p>
+<p><em>说到底C++仍以C为基础，包括 区块（blocks）、语句（statements）、预处理器（preprocessor）、<br>内置数据类型(build-in data types)、数组（arrays）、指针(pointers)都来自C。但是高效的编程守则指出了C的局限：没有模板（templates）,没有异常（exceptions）,没有重载(overloading)</em></p>
+<p><strong>(2) Object-Oriented C++ </strong></p>
+<p>这一部分是面向对象的精髓坐在：classes(构造函数和析构函数)、封装(encapsulation)、继承(inheritance)、多态(polymorphism)、virtual 函数（动态绑定）……</p>
+<p><strong>(3) Template C++ </strong></p>
+<p>这是C++的泛型编程部分，威力非常强大，需要仔细学习</p>
+<p><strong>(4) STL </strong></p>
+<p>STL是template的程序库。它将容器(containers)、迭代器(iterators)、算法(algorithms)以及函数对象(fountion-objects)紧密的结合在一起</p>
+<p><strong><em>还有一点，当我们从C转到C++后，pass-by-reference-to-const往往更加好用。C中的pass-by-value同样适用但是性能问题</em></strong></p>
+<p><strong><em>因此高效编程要视情况而定</em></strong></p>
+<p>—————————————————————————————————————————————</p>
+<p>###2.条款02：尽量以const,enum,inline替换 #define<br>这个问题曾经在我面试一个互联网公司时被问到了，当时答的也是不太清晰，尤其是面对原理时。</p>
+<p><em>这个条款根据书中所说可以改成”宁可以编译器替换预处理器”更好</em>，我们在#define 后的记号或许就不就被编译器看到，或许在编译器开始处理源码之前就被预处理器移走了，于是记号就没有进入记号表(symbol table)中<br>。解决的方法就是用一个常量替换上述的宏（const）,作为语言常量，一定会被编译器看到。同时使用const比使用#define导致较小量的码。</p>
+<p>针对const替换#define有两种特殊情况：</p>
+<p><strong>(1) 定义常量指针</strong></p>
+<p>由于常量定义式通常在头文件内，因此有必要将指针声明为const,这时使用string比char要优秀：</p>
+<pre><code>const str::string str(&quot;hello world&quot;);
+</code></pre><p><strong>(2) class专属常量</strong></p>
+<p>为了将常量的作用于限制于class，这个常量必须定义在class内，<font size="3" face="黑体" color="#0099ff">而为了此常量没有其他副本，必须将它定义成static成员：</font></p>
+<pre><code>class fruit{
+    private:
+        static const int num;
+        int color[num];
+        ……
+};
+</code></pre><p>同样可以在class内定义，或者class外定义：</p>
+<pre><code>const int num = 5;    
+</code></pre><p>我们无法利用#define去创建一个class专属的变量，因为#define并不重视作用域。故不支持封装性</p>
+<p><em>对于#define实现的宏，有时看起来更像函数，但不会有函数调用。这时就需要用inline取替换D#define了</em></p>
+<p><strong><br>总结：
+</strong></p>
+<p><strong>对于单纯的常量，最好以const对象或enums替换#define</strong></p>
+<p><strong>对于形似函数的宏（macros）,最好用inline函数替换#define</strong></p>
+<p>###3.条款03尽可能使用const</p>
+<p>const允许我们指定一个不被改变的对象，同时编译器会强制实施这项约束。const最优是用在面对函数声明时，const可以和函数返回值，各参数，函数自身产生关联。</p>
+<p><strong>const成员函数</strong></p>
+<p>将const实施于成员函数的目的是为了确认该成员函数可作用于const对象身上，这是很重要的：</p>
+<p><1>这个使class接口比较容易被理解，即哪个函数可以，哪个不可以</1></p>
+<p><2>它们使”操作const对象”成为了可能</2></p>
+<p>###4.条款04确定对象被使用前已经先被初始化</p>
+<p>针对将对象初始化，C和C++总是搞得很乱，其实在C++中已经通过default构造函数对对象进行了初始化，但是在non-C part of C++中并没有保障，所以我们的最佳处理就是永远在使用对象之前对它进行初始化，对于无任何成员的内置类型，必须手工完成初始化</p>
+<p><strong>理解赋值(assignment)与初始化(initiazation)</strong></p>
+<p>C++中，对象的成员变量的初始化动作发生在进入构造函数体之前，初始化的发生时间更早，发生于这些成员的default构造函数被自动调用之前，故我们初始化的最佳方法是 <font size="3" face="黑体" color="#0099ff">成员初值列</font></p>
+<pre><code>fruit::fruit(const str::string &amp;color, const str::string &amp;size){
+    theColor = color;
+    theSize = size;
+}；    //这是赋值
+
+
+fruit::fruit(const str::string &amp;color, const str::string &amp;size):
+    theColor(color),
+    theSize(size)
+    {}       //这是初始化，通常这个效率更高
+</code></pre><p><em>规定：总是在初值列中列出所有的成员变量，同时总是使用成员初始化列</em></p>
+<p>C++有着固定的”成员初始化次序”: 基类早于派生类初始化，同时class的成员变量总是以其声明的次序被初始化，无论在初始化列表是什么顺序，所以我们在初始化时尽量与声明的保持一致</p>
+<p>针对static对象，寿命在被构造开始到程序结束，即main()函数退出，C++对”定义于不同的编译单元内的non-local static对象”的初始化相对次序并无明确的次序，所以这就需要我们在编写程序时加强程序的设计。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;hr&gt;
+&lt;p&gt;&lt;em&gt;&lt;font size=&quot;3&quot; face=&quot;微软雅黑&quot;&gt;  最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招
     
     </summary>
     
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
   </entry>
   
