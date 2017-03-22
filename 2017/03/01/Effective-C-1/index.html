@@ -109,20 +109,20 @@
 
 <meta name="description" content="最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招故拾起来再看下，希望对自己寻找工作的过程和将来的职业生涯都有帮助；更重要的一点是接触的C++时间更长些，还是没有研究的很深入，所以再读一遍之前看过的书，复习一下，希望有更深的理解！
 
-#一.让自己">
+一.让自己习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Effective C++ 阅读笔记">
+<meta property="og:title" content="Effective C++ 阅读笔记(1)">
 <meta property="og:url" content="http://yoursite.com/2017/03/01/Effective-C-1/index.html">
 <meta property="og:site_name" content="拼途">
 <meta property="og:description" content="最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招故拾起来再看下，希望对自己寻找工作的过程和将来的职业生涯都有帮助；更重要的一点是接触的C++时间更长些，还是没有研究的很深入，所以再读一遍之前看过的书，复习一下，希望有更深的理解！
 
-#一.让自己">
-<meta property="og:updated_time" content="2017-03-22T16:51:26.000Z">
+一.让自己习">
+<meta property="og:updated_time" content="2017-03-22T17:04:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Effective C++ 阅读笔记">
+<meta name="twitter:title" content="Effective C++ 阅读笔记(1)">
 <meta name="twitter:description" content="最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招故拾起来再看下，希望对自己寻找工作的过程和将来的职业生涯都有帮助；更重要的一点是接触的C++时间更长些，还是没有研究的很深入，所以再读一遍之前看过的书，复习一下，希望有更深的理解！
 
-#一.让自己">
+一.让自己习">
 
 
 
@@ -156,7 +156,7 @@
 
 
 
-  <title> Effective C++ 阅读笔记 | 拼途 </title>
+  <title> Effective C++ 阅读笔记(1) | 拼途 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -370,7 +370,7 @@
             
             
               
-                Effective C++ 阅读笔记
+                Effective C++ 阅读笔记(1)
               
             
           </h1>
@@ -401,7 +401,7 @@
 
           
           
-             <span id="/2017/03/01/Effective-C-1/" class="leancloud_visitors" data-flag-title="Effective C++ 阅读笔记">
+             <span id="/2017/03/01/Effective-C-1/" class="leancloud_visitors" data-flag-title="Effective C++ 阅读笔记(1)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -438,8 +438,7 @@
         <hr>
 <p><em><font size="3" face="微软雅黑">  最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招故拾起来再看下，希望对自己寻找工作的过程和将来的职业生涯都有帮助；更重要的一点是接触的C++时间更长些，还是没有研究的很深入，所以再读一遍之前看过的书，复习一下，希望有更深的理解！<br></font></em></p>
 <hr>
-<p>#一.让自己习惯C++ </p>
-<p>##1.条款01：视C++为一个语言联邦<br>一开始，C++只是C上加一些面向对象的特征。故C++最初的名称 C with Classes,但是C++并非一种单一语言，C++ 中各种规则都倾向于简单、直观、容易，因此我们理解C++也有了下面4个最主要的特征：</p>
+<h1 id="一-让自己习惯C"><a href="#一-让自己习惯C" class="headerlink" title="一.让自己习惯C++"></a>一.让自己习惯C++</h1><h2 id="1-条款01：视C-为一个语言联邦"><a href="#1-条款01：视C-为一个语言联邦" class="headerlink" title="1.条款01：视C++为一个语言联邦"></a>1.条款01：视C++为一个语言联邦</h2><p>一开始，C++只是C上加一些面向对象的特征。故C++最初的名称 C with Classes,但是C++并非一种单一语言，C++ 中各种规则都倾向于简单、直观、容易，因此我们理解C++也有了下面4个最主要的特征：</p>
 <p><strong>(1) C </strong><br><em>说到底C++仍以C为基础，包括 区块（blocks）、语句（statements）、预处理器（preprocessor）、<br>内置数据类型(build-in data types)、数组（arrays）、指针(pointers)都来自C。但是高效的编程守则指出了C的局限：没有模板（templates）,没有异常（exceptions）,没有重载(overloading)</em></p>
 <p><strong>(2) Object-Oriented C++ </strong><br>这一部分是面向对象的精髓坐在：classes(构造函数和析构函数)、封装(encapsulation)、继承(inheritance)、多态(polymorphism)、virtual 函数（动态绑定）……</p>
 <p><strong>(3) Template C++ </strong><br>这是C++的泛型编程部分，威力非常强大，需要仔细学习</p>
@@ -447,7 +446,7 @@
 <p><strong><em>还有一点，当我们从C转到C++后，pass-by-reference-to-const往往更加好用。C中的pass-by-value同样适用但是性能问题</em></strong></p>
 <p><strong><em>因此高效编程要视情况而定</em></strong></p>
 <p>—————————————————————————————————————————————</p>
-<p>##2.条款02：尽量以const,enum,inline替换 #define<br>这个问题曾经在我面试一个互联网公司时被问到了，当时答的也是不太清晰，尤其是面对原理时。</p>
+<h2 id="2-条款02：尽量以const-enum-inline替换-define"><a href="#2-条款02：尽量以const-enum-inline替换-define" class="headerlink" title="2.条款02：尽量以const,enum,inline替换 #define"></a>2.条款02：尽量以const,enum,inline替换 #define</h2><p>这个问题曾经在我面试一个互联网公司时被问到了，当时答的也是不太清晰，尤其是面对原理时。</p>
 <p><em>这个条款根据书中所说可以改成”宁可以编译器替换预处理器”更好</em>，我们在#define 后的记号或许就不就被编译器看到，或许在编译器开始处理源码之前就被预处理器移走了，于是记号就没有进入记号表(symbol table)中<br>。解决的方法就是用一个常量替换上述的宏（const）,作为语言常量，一定会被编译器看到。同时使用const比使用#define导致较小量的码。</p>
 <p>针对const替换#define有两种特殊情况：</p>
 <p><strong>(1) 定义常量指针</strong></p>
@@ -467,14 +466,12 @@
 </strong></p>
 <p><strong>对于单纯的常量，最好以const对象或enums替换#define</strong></p>
 <p><strong>对于形似函数的宏（macros）,最好用inline函数替换#define</strong></p>
-<p>##3.条款03尽可能使用const</p>
-<p>const允许我们指定一个不被改变的对象，同时编译器会强制实施这项约束。const最优是用在面对函数声明时，const可以和函数返回值，各参数，函数自身产生关联。</p>
+<h2 id="3-条款03-尽可能使用const"><a href="#3-条款03-尽可能使用const" class="headerlink" title="3.条款03: 尽可能使用const"></a>3.条款03: 尽可能使用const</h2><p>const允许我们指定一个不被改变的对象，同时编译器会强制实施这项约束。const最优是用在面对函数声明时，const可以和函数返回值，各参数，函数自身产生关联。</p>
 <p><strong>const成员函数</strong></p>
 <p>将const实施于成员函数的目的是为了确认该成员函数可作用于const对象身上，这是很重要的：</p>
 <p><1>这个使class接口比较容易被理解，即哪个函数可以，哪个不可以</1></p>
 <p><2>它们使”操作const对象”成为了可能</2></p>
-<p>##4.条款04确定对象被使用前已经先被初始化</p>
-<p>针对将对象初始化，C和C++总是搞得很乱，其实在C++中已经通过default构造函数对对象进行了初始化，但是在non-C part of C++中并没有保障，所以我们的最佳处理就是永远在使用对象之前对它进行初始化，对于无任何成员的内置类型，必须手工完成初始化</p>
+<h2 id="4-条款04-确定对象被使用前已经先被初始化"><a href="#4-条款04-确定对象被使用前已经先被初始化" class="headerlink" title="4.条款04: 确定对象被使用前已经先被初始化"></a>4.条款04: 确定对象被使用前已经先被初始化</h2><p>针对将对象初始化，C和C++总是搞得很乱，其实在C++中已经通过default构造函数对对象进行了初始化，但是在non-C part of C++中并没有保障，所以我们的最佳处理就是永远在使用对象之前对它进行初始化，对于无任何成员的内置类型，必须手工完成初始化</p>
 <p><strong>理解赋值(assignment)与初始化(initiazation)</strong></p>
 <p>C++中，对象的成员变量的初始化动作发生在进入构造函数体之前，初始化的发生时间更早，发生于这些成员的default构造函数被自动调用之前，故我们初始化的最佳方法是 <font size="3" face="黑体" color="#0099ff">成员初值列</font></p>
 <pre><code>fruit::fruit(const str::string &amp;color, const str::string &amp;size){
@@ -593,8 +590,17 @@ fruit::fruit(const str::string &amp;color, const str::string &amp;size):
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/head2.jpeg"
@@ -674,6 +680,22 @@ fruit::fruit(const str::string &amp;color, const str::string &amp;size):
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-让自己习惯C"><span class="nav-number">1.</span> <span class="nav-text">一.让自己习惯C++</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-条款01：视C-为一个语言联邦"><span class="nav-number">1.1.</span> <span class="nav-text">1.条款01：视C++为一个语言联邦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-条款02：尽量以const-enum-inline替换-define"><span class="nav-number">1.2.</span> <span class="nav-text">2.条款02：尽量以const,enum,inline替换 #define</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-条款03-尽可能使用const"><span class="nav-number">1.3.</span> <span class="nav-text">3.条款03: 尽可能使用const</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-条款04-确定对象被使用前已经先被初始化"><span class="nav-number">1.4.</span> <span class="nav-text">4.条款04: 确定对象被使用前已经先被初始化</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
