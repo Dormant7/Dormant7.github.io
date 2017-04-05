@@ -107,19 +107,16 @@
 
 
 
-<meta name="description" content="二.构造/析构/赋值运算
-5.条款05: 了解C++默默编写并调用哪些函数这是个很重要的问题，我们声明的空类其实“并不空”，当C++处理过之后，如果在类中自己并没有声明任何函数和变量，编译器就会为它声明一个default构造函数，一个copy构造函数，一个析构函数，一个copy assignment操作符，一共四个，当然这些函数都是public且inline">
+<meta name="description" content="二.构造/析构/赋值运算">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Effective C++ 阅读笔记(2)">
 <meta property="og:url" content="http://yoursite.com/2017/03/04/Effective-C-2/index.html">
 <meta property="og:site_name" content="拼途">
-<meta property="og:description" content="二.构造/析构/赋值运算
-5.条款05: 了解C++默默编写并调用哪些函数这是个很重要的问题，我们声明的空类其实“并不空”，当C++处理过之后，如果在类中自己并没有声明任何函数和变量，编译器就会为它声明一个default构造函数，一个copy构造函数，一个析构函数，一个copy assignment操作符，一共四个，当然这些函数都是public且inline">
-<meta property="og:updated_time" content="2017-04-05T16:13:05.000Z">
+<meta property="og:description" content="二.构造/析构/赋值运算">
+<meta property="og:updated_time" content="2017-04-05T16:26:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Effective C++ 阅读笔记(2)">
-<meta name="twitter:description" content="二.构造/析构/赋值运算
-5.条款05: 了解C++默默编写并调用哪些函数这是个很重要的问题，我们声明的空类其实“并不空”，当C++处理过之后，如果在类中自己并没有声明任何函数和变量，编译器就会为它声明一个default构造函数，一个copy构造函数，一个析构函数，一个copy assignment操作符，一共四个，当然这些函数都是public且inline">
+<meta name="twitter:description" content="二.构造/析构/赋值运算">
 
 
 
@@ -444,9 +441,9 @@
       
 
       
-        <h1 id="二-构造-析构-赋值运算"><a href="#二-构造-析构-赋值运算" class="headerlink" title="二.构造/析构/赋值运算"></a>二.构造/析构/赋值运算</h1><hr>
+        <h1 id="二-构造-析构-赋值运算"><a href="#二-构造-析构-赋值运算" class="headerlink" title="二.构造/析构/赋值运算"></a>二.构造/析构/赋值运算</h1><a id="more"></a>
+<hr>
 <h2 id="5-条款05-了解C-默默编写并调用哪些函数"><a href="#5-条款05-了解C-默默编写并调用哪些函数" class="headerlink" title="5.条款05: 了解C++默默编写并调用哪些函数"></a>5.条款05: 了解C++默默编写并调用哪些函数</h2><p>这是个很重要的问题，我们声明的空类其实“并不空”，当C++处理过之后，如果在类中自己并没有声明任何函数和变量，编译器就会为它声明一个default构造函数，一个copy构造函数，一个析构函数，一个copy assignment操作符，一共四个，当然这些函数都是public且inline</p>
-<a id="more"></a>
 <p>例如我们声明了一个类：</p>
 <pre><code>class Empty{};
 </code></pre><p>其实编译器已经替我们做好了许多事，相当于生成下面的代码：</p>
