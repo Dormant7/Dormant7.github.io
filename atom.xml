@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>拼途</title>
+  <title>有家客栈</title>
   <subtitle>我也看到了，他好像条狗哎。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-06T14:48:29.000Z</updated>
+  <updated>2017-04-07T02:01:09.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/04/travel-1/"/>
     <id>http://yoursite.com/2017/04/04/travel-1/</id>
     <published>2017-04-03T16:00:00.000Z</published>
-    <updated>2017-04-06T14:48:29.000Z</updated>
+    <updated>2017-04-07T02:01:09.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p><img src="https://ww1.sinaimg.cn/large/006tKfTcly1feb4zo2knfj31kw0w0aej.jpg" alt="" title="在路上"></p>
@@ -57,10 +57,12 @@
     
     </summary>
     
+      <category term="在路上" scheme="http://yoursite.com/categories/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
     
-      <category term="旅行" scheme="http://yoursite.com/tags/%E6%97%85%E8%A1%8C/"/>
     
       <category term="在路上" scheme="http://yoursite.com/tags/%E5%9C%A8%E8%B7%AF%E4%B8%8A/"/>
+    
+      <category term="旅行" scheme="http://yoursite.com/tags/%E6%97%85%E8%A1%8C/"/>
     
   </entry>
   
@@ -69,7 +71,7 @@
     <link href="http://yoursite.com/2017/03/06/Effective-C-3/"/>
     <id>http://yoursite.com/2017/03/06/Effective-C-3/</id>
     <published>2017-03-05T16:00:00.000Z</published>
-    <updated>2017-04-06T15:02:26.000Z</updated>
+    <updated>2017-04-07T02:00:46.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="三-资源管理"><a href="#三-资源管理" class="headerlink" title="三.资源管理"></a>三.资源管理</h2><hr>
 <a id="more"></a>
@@ -97,6 +99,8 @@
     
     </summary>
     
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
@@ -107,7 +111,7 @@
     <link href="http://yoursite.com/2017/03/04/Effective-C-2/"/>
     <id>http://yoursite.com/2017/03/04/Effective-C-2/</id>
     <published>2017-03-03T16:00:00.000Z</published>
-    <updated>2017-04-06T14:47:13.000Z</updated>
+    <updated>2017-04-07T02:00:09.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="二-构造-析构-赋值运算"><a href="#二-构造-析构-赋值运算" class="headerlink" title="二.构造/析构/赋值运算"></a>二.构造/析构/赋值运算</h2><a id="more"></a>
 <hr>
@@ -168,6 +172,8 @@
     
     </summary>
     
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
@@ -178,7 +184,7 @@
     <link href="http://yoursite.com/2017/03/01/Effective-C-1/"/>
     <id>http://yoursite.com/2017/03/01/Effective-C-1/</id>
     <published>2017-02-28T16:00:00.000Z</published>
-    <updated>2017-04-06T14:46:18.000Z</updated>
+    <updated>2017-04-07T01:59:21.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <p><em><font size="3" face="微软雅黑">  最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++<a id="more"></a>的一些细节和原理有些已经记不清楚了，现在正赶上今年的校招故拾起来再看下，希望对自己寻找工作的过程和将来的职业生涯都有帮助；更重要的一点是接触的C++时间更长些，还是没有研究的很深入，所以再读一遍之前看过的书，复习一下，希望有更深的理解！<br></font></em></p>
@@ -238,6 +244,8 @@ fruit::fruit(const str::string &amp;color, const str::string &amp;size):
 &lt;p&gt;&lt;em&gt;&lt;font size=3 face = &quot;微软雅黑&quot;&gt;  最近在公司实习，做的是偏数据分析的事情，用的更多的是Python和Shell去开发和处理一些数据库和分布式系统中的数据，故之前相对熟悉的C++
     
     </summary>
+    
+      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
     
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
