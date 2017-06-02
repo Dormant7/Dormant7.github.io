@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-02T14:59:21.000Z</updated>
+  <updated>2017-06-02T15:04:23.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,14 +16,14 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2017/06/02/RPC/"/>
-    <id>http://yoursite.com/2017/06/02/RPC/</id>
-    <published>2017-06-02T14:59:21.000Z</published>
-    <updated>2017-06-02T14:59:21.000Z</updated>
+    <title>深入浅出RPC</title>
+    <link href="http://yoursite.com/2017/05/23/RPC/"/>
+    <id>http://yoursite.com/2017/05/23/RPC/</id>
+    <published>2017-05-22T16:00:00.000Z</published>
+    <updated>2017-06-02T15:04:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>#深入浅出RPC</p>
-<hr>
+    <content type="html"><![CDATA[<hr>
+<a id="more"></a>
 <p>##RPC是什么</p>
 <p>最近在看hadoop的一些东西，看到hadoop rpc时想深入了解一下rpc的东西，于是通过查看资料总结一下；</p>
 <p>###首先RPC是什么<br>早期的单机时代，一台电脑上运行多个进程，进程在各自的栈帧中运行，进程之间互不交流。假如A进程需要一个获取磁盘数据的功能，B进程也需要一个同样的功能，程序员就必须为两个进程都写一个获取数据的功能。这样很麻烦，于是就出现了IPC（Inter-process communication，单机中运行的进程之间的相互通信）。OK，现在A既然有了获取数据的功能，B就调用A进程上的功能好了，程序员终于可以偷下懒了。</p>
@@ -40,14 +40,18 @@
     
     <summary type="html">
     
-      &lt;p&gt;#深入浅出RPC&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##RPC是什么&lt;/p&gt;
-&lt;p&gt;最近在看hadoop的一些东西，看到hadoop rpc时想深入了解一下rpc的东西，于是通过查看资料总结一下；&lt;/p&gt;
-&lt;p&gt;###首先RPC是什么&lt;br&gt;早期的单机时代，一台电脑上运行多个进程，进
+      &lt;hr&gt;
     
     </summary>
     
+      <category term="数据" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE/"/>
+    
+    
+      <category term="hadoop" scheme="http://yoursite.com/tags/hadoop/"/>
+    
+      <category term="rpc" scheme="http://yoursite.com/tags/rpc/"/>
+    
+      <category term="数据" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
