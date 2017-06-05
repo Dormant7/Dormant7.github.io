@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-02T15:08:09.000Z</updated>
+  <updated>2017-06-05T07:55:48.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hadoop作业提交与初始化过程</title>
+    <link href="http://yoursite.com/2017/05/25/hadoop-1/"/>
+    <id>http://yoursite.com/2017/05/25/hadoop-1/</id>
+    <published>2017-05-24T16:00:00.000Z</published>
+    <updated>2017-06-05T07:55:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<a id="more"></a>
+<h2 id="1-整体流程"><a href="#1-整体流程" class="headerlink" title="1.整体流程"></a>1.整体流程</h2><p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fga9nd9uxmj30mc04ldga.jpg" alt=""></p>
+<p><strong>如上图，提交job包括前三个阶段，初始化过程是最后一个阶段</strong></p>
+<h2 id="2-详解作业提交的过程"><a href="#2-详解作业提交的过程" class="headerlink" title="2.详解作业提交的过程"></a>2.详解作业提交的过程</h2><h3 id="1-shell命令提交作业"><a href="#1-shell命令提交作业" class="headerlink" title="(1)shell命令提交作业"></a>(1)shell命令提交作业</h3><p>通过Java API，Hadoop Streaming 和Hadoop Pipes方式提交作业，会根据配置将在main函数中调用JobClient.runJob函数提交作业<jobclient是一个类></jobclient是一个类></p>
+<h3 id="2-JobClient根据JobConf上传文件到HDFS"><a href="#2-JobClient根据JobConf上传文件到HDFS" class="headerlink" title="(2)JobClient根据JobConf上传文件到HDFS"></a>(2)JobClient根据JobConf上传文件到HDFS</h3><p>JobClient将作业提交到JobTracker上之前，需要获取作业ID，创建HDFS目录，上传作业文件，生成Split文件，这些有JobClient类中的submitJobInternal(job)函数实现，其中的上传文件利用了DistributeCache工具完成。</p>
+<p>这其中包括产生InputSplit(输入分片)，用户提交MR后，JobClient会调用InputFormat的getSplits方法生成InputSplit相关信息。其中信息包括两部分：<strong>InputSplit元数据信息</strong>和<strong>原始InputSplit信息</strong>其中，InputSplit元数据信息被JobTracker使用；第二部分被Map Task初始化使用，来获取要处理的数据。这两部分信息存储到相关目录下的文件job.splitmetainfo和job.split中。</p>
+<h3 id="3-JobClient调用RPC提交作业到JobTracker"><a href="#3-JobClient调用RPC提交作业到JobTracker" class="headerlink" title="(3)JobClient调用RPC提交作业到JobTracker"></a>(3)JobClient调用RPC提交作业到JobTracker</h3><p>提交JobTracker端会进行一下操作：</p>
+<p><1>为作业创建JobInProgress对象</1></p>
+<p><2>检查用户是否具有指定队列的作业提交权限</2></p>
+<p><3>检查作业配置的内存使用量是否合理</3></p>
+<p><4>通知TaskScheduler初始化作业</4></p>
+<h2 id="3-作业初始化过程详解"><a href="#3-作业初始化过程详解" class="headerlink" title="3.作业初始化过程详解"></a>3.作业初始化过程详解</h2><p>调度器用JobTracker.initJob()函数对新作业进行初始化。作业的初始化的主要工作是构造Map Task 和 Reduce Task 并对他们初始化。<br>initJob会分为以下4个任务：Setup Task，Map Task， Reduce Task , Cleanup Task</p>
+<p>参考《Hadoop 技术内幕》</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+    
+    </summary>
+    
+      <category term="数据" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE/"/>
+    
+    
+      <category term="hadoop" scheme="http://yoursite.com/tags/hadoop/"/>
+    
+      <category term="数据" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>深入浅出RPC</title>
