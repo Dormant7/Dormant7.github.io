@@ -1707,7 +1707,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cc65ff;
+  background: #dbc6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2882,7 +2882,7 @@ body {
   background-position: 50% 50%;
 }
 body {
-  background: url("/images/bak.jpg");
+  background: url("/images/abc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 40% 40%;
